@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Passwoed Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section class="section bg-section">
+        <div class="bg-background">
+            <div class="bg-color-inner">
+                <div class="item-header">
+                    <h1>Password generator</h1>
+                </div>
+                <div class="item ">
+                    <input type="text" class="output-display" placeholder="Please, Select atleast a parameter.">
+                </div>
+                <div class="item item-hover">
+                    <div class="progress-bar">
+                        <input type="range" min="4" max="32" class="progress-bar-inner" id="progress-range"
+                            oninput="changeValue()" value="16">
+                        <div class="progress-value"><span>Length:</span></div>
+                    </div>
+                </div>
+                <div class="item item-hover">
+                    <div class="uppercase">
+                        <label for="uppercase">Include Uppercase</label>
+                        <input type="checkbox" class="checkbox1" name="uppercase" id="uppercase">
+
+                    </div>
+                </div>
+                <div class="item item-hover">
+                    <div class="lowercase">
+                        <label for="lowercase">Include Lowercase</label>
+                        <input type="checkbox" class="checkbox2" name="lowercase" id="lowercase">
+                    </div>
+                </div>
+                <div class="item item-hover">
+                    <div class="number">
+                        <label for="number">Include Number</label>
+                        <input type="checkbox" class="checkbox3" name="number" id="number">
+                    </div>
+                </div>
+                <div class="item item-hover">
+                    <div class="symbol">
+                        <label for="symbol">Include Symbol</label>
+                        <input type="checkbox" class="checkbox4" name="symbol" id="symbol">
+                    </div>
+                </div>
+                <div class="item item-hover">
+                    <div class="generate-password">
+                        <button class="generate-password-inner btn" value="true" onclick="genPassword()">Generate
+                            Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
